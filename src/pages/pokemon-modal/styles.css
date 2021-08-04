@@ -1,0 +1,19 @@
+.PokemonModalList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.Pokemon {
+  cursor: pointer;
+}
+
+.PokemonName {
+  font-weight: bold;
+  margin-top: 10px;
+}

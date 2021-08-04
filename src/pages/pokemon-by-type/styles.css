@@ -1,0 +1,146 @@
+.PokemonWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  text-align: center;
+}
+
+.PokemonWrapper,
+.Pagination {
+  max-width: 500px;
+  margin: auto;
+}
+
+.PokemonName {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Pagination {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.TypesContainer {
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.TypeContainer {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 3px 6px;
+  font-size: 16px;
+  margin: 3px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.TypeContainer--normal {
+  background-color: #a8a878;
+  border: 2px solid #6d6d4e;
+}
+
+.TypeContainer--fighting {
+  background-color: #c03028;
+  border: 2px solid #7d1f1a;
+}
+
+.TypeContainer--flying {
+  background-color: #a890f0;
+  border: 2px solid #6d5e9c;
+}
+
+.TypeContainer--poison {
+  background-color: #a040a0;
+  border: 2px solid #682a68;
+}
+
+.TypeContainer--ground {
+  background-color: #e0c068;
+  border: 2px solid #927d44;
+}
+
+.TypeContainer--rock {
+  background-color: #b8a038;
+  border: 2px solid #786824;
+}
+
+.TypeContainer--bug {
+  background-color: #a8b820;
+  border: 2px solid #6d7815;
+}
+
+.TypeContainer--ghost {
+  background-color: #705898;
+  border: 2px solid #493963;
+}
+
+.TypeContainer--steel {
+  background-color: #b8b8d0;
+  border: 2px solid #787887;
+}
+
+.TypeContainer--fire {
+  background-color: #f08030;
+  border: 2px solid #9c531f;
+}
+
+.TypeContainer--water {
+  background-color: #6890f0;
+  border: 2px solid #445e9c;
+}
+
+.TypeContainer--grass {
+  background-color: #78c850;
+  border: 2px solid #4e8234;
+}
+
+.TypeContainer--electric {
+  background-color: #f8d030;
+  border: 2px solid #a1871f;
+}
+
+.TypeContainer--psychic {
+  background-color: #f85888;
+  border: 2px solid #a13959;
+}
+
+.TypeContainer--ice {
+  background-color: #98d8d8;
+  border: 2px solid #638d8d;
+}
+
+.TypeContainer--dragon {
+  background-color: #7038f8;
+  border: 2px solid #4924a1;
+}
+
+.TypeContainer--dark {
+  background-color: #705848;
+  border: 2px solid #49392f;
+}
+
+.TypeContainer--fairy {
+  background-color: #ee99ac;
+  border: 2px solid #9b6470;
+}
+
+.TypeContainer.active {
+  border-width: 4px;
+}
+
+button {
+  margin: 20px auto;
+  height: 30px;
+  display: block;
+  font-weight: bold;
+  width: 130px;
+  cursor: pointer;
+}
