@@ -1,4 +1,4 @@
-.PokemonWrapper {
+.PokemonPagList .PokemonWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -7,25 +7,25 @@
   text-align: center;
 }
 
-.PokemonWrapper,
-.Pagination {
+.PokemonPagList .PokemonWrapper,
+.PokemonPagList .Pagination {
   max-width: 500px;
   margin: auto;
 }
 
-.PokemonName {
+.PokemonPagList .PokemonName {
   font-weight: bold;
   margin-top: 10px;
 }
 
-.Pagination {
+.PokemonPagList .Pagination {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
 }
 
-button {
+.PokemonPagList button {
   margin: 20px auto;
   height: 30px;
   display: block;

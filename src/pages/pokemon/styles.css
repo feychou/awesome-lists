@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.PokemonName {
+.PokemonList .PokemonName {
   font-weight: bold;
   margin-top: 10px;
 }

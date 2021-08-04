@@ -9,11 +9,15 @@
   text-align: center;
 }
 
-.Pokemon {
+.PokemonModalList .Pokemon {
   cursor: pointer;
 }
 
-.PokemonName {
+.PokemonModalList .PokemonName {
   font-weight: bold;
   margin-top: 10px;
+}
+
+.PokemonModalCancelButton {
+  height: 40px;
 }

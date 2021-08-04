@@ -68,7 +68,7 @@ function PokemonModal() {
           ))}
         </ModalBody>
         <ModalFooter>
-          <Button color="secondary" onClick={toggle}>
+          <Button className="PokemonModalCancelButton" color="secondary" onClick={toggle}>
             Cancel
           </Button>
         </ModalFooter>

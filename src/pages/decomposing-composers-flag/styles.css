@@ -1,0 +1,109 @@
+.ComposersListFlag {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ComposersListFlag .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ComposersListFlag .title h1 {
+  text-align: center;
+  color: grey;
+}
+
+.ComposersListFlag .ComposersGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.ComposersListFlag .Composer {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.ComposersListFlag .Composer h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.ComposersListFlag .Composer img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.ComposersListFlag .Composer-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.ComposersListFlag .Composer:hover .Composer-inner {
+  transform: rotateY(180deg);
+}
+
+.ComposersListFlag .Composer-front,
+.ComposersListFlag .Composer-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ComposersListFlag .Composer-back {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.ComposersListFlag .Composer li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .ComposersListFlag .ComposersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .ComposersListFlag .ComposersGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ComposersListFlag .SearchActions {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.ComposersListFlag .SearchButton {
+  margin-left: 20px;
+}
+
+.ComposersListFlag .SearchInput,
+.ComposersListFlag .SearchButton {
+  padding: 10px;
+  height: 50px;
+}
+
+.ComposersListFlag .SearchInput {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 60%;
+}

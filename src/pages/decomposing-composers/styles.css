@@ -1,0 +1,110 @@
+.ComposersList {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ComposersList .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ComposersList .title h1 {
+  text-align: center;
+  color: grey;
+}
+
+.ComposersList .ComposersGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.ComposersList .Composer {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.ComposersList .Composer h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.ComposersList .Composer img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.ComposersList .Composer-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.ComposersList .Composer:hover .Composer-inner {
+  transform: rotateY(180deg);
+}
+
+.ComposersList .Composer-front,
+.ComposersList .Composer-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ComposersList .Composer-back {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.ComposersList .Composer li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .ComposersList .ComposersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .ComposersList .ComposersGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ComposersList .SearchActions {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.ComposersList .SearchButton {
+  margin-left: 20px;
+}
+
+.ComposersList .SearchInput,
+.ComposersList .SearchButton {
+  padding: 10px;
+  height: 50px;
+}
+
+.ComposersList .SearchInput {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 60%;
+}
