@@ -1,0 +1,29 @@
+.RickAndMorty {
+  padding: 30px;
+}
+
+.RickAndMorty .CharactersList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.RickAndMorty .CharacterName {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.RickAndMorty .Pagination {
+  margin: 30px;
+}
+
+.RickAndMorty .Pagination button {
+  height: 60px;
+  margin-right: 15px;
+  padding: 15px;
+}
