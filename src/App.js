@@ -7,6 +7,7 @@ import PokemonModal from './pages/pokemon-modal';
 import DecomposingComposers from './pages/decomposing-composers';
 import DecomposingComposersFlag from './pages/decomposing-composers-flag';
 import RickAndMorty from './pages/rick-and-morty';
+import Doggos from './pages/doggos';
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/decomposing-composers"><DecomposingComposers /></Route>
         <Route path="/decomposing-composers-loading"><DecomposingComposersFlag /></Route>
         <Route path="/rick-and-morty"><RickAndMorty /></Route>
+        <Route path="/doggos"><Doggos /></Route>
         <Route path="/">
           <header className="App-header">
             <h1>Awesome lists!</h1>

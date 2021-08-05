@@ -1,0 +1,11 @@
+.DoggosList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DoggosList .Doggo {
+  padding: 15px;
+}
