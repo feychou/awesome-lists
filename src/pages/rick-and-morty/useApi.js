@@ -9,6 +9,7 @@ function useApi() {
   function loadCharacters(
     url = "https://rickandmortyapi.com/api/character/?page=1"
   ) {
+    setIsLoading(true);
     fetch(url)
       .then((response) => response.json())
       .then((json) => {
