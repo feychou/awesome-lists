@@ -1,0 +1,123 @@
+* {
+  list-style: none;
+}
+
+.HackerNews {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 1em 4em;
+}
+
+.HackerNews .alertMessage {
+  margin: 2em;
+  font-weight: bold;
+}
+
+/*---------NAVBAR-------*/
+.HackerNews .navbar {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #ef6537;
+}
+
+.HackerNews .navbar-title {
+  font-weight: bold;
+}
+
+.HackerNews .navbar-left {
+  width: 80%;
+}
+
+.HackerNews .navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.HackerNews .navbar-border {
+  border-right: solid 1px black;
+}
+
+.HackerNews ul {
+  display: flex;
+}
+
+.HackerNews li {
+  padding: 0.4em;
+}
+
+.HackerNews .logo {
+  color: white;
+  font-weight: bold;
+  border: solid 1px white;
+  margin: 2px;
+  max-height: 15px;
+}
+/*---------LIST-------*/
+
+.HackerNews .list-body {
+  background-color: #f6f6ef;
+  text-align: left;
+  padding: 0.5em;
+  font-size: 15px;
+}
+
+.HackerNews .list-second-row {
+  font-size: 13px;
+  color: gray;
+}
+
+/*---------SEARCH-------*/
+.HackerNews .search-actions {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  max-height: 20px;
+  align-items: center;
+  background-color: #f6f6ef;
+}
+
+.HackerNews .search-actions p {
+  color: dark-gray;
+}
+
+.HackerNews input {
+  margin: 1em;
+}
+/*---------Pagination-------*/
+
+.HackerNews .Pagination {
+  margin-top: 20px;
+  background-color: #f6f6ef;
+}
+
+.HackerNews .Pagination button {
+  margin-right: 10px;
+}
+
+/*---------Footer-------*/
+
+.HackerNews .footer {
+  background-color: #f6f6ef;
+}
+
+.HackerNews .github-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.HackerNews .github-logo:hover {
+  background-color: #ef6537;
+  border-radius: 100%;
+}
+
+/*---------Responsive-------*/
+
+@media only screen and (max-width: 750px) {
+  .hidden {
+    display: none;
+  }
+}

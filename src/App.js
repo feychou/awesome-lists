@@ -8,6 +8,7 @@ import DecomposingComposers from './pages/decomposing-composers';
 import DecomposingComposersFlag from './pages/decomposing-composers-flag';
 import RickAndMorty from './pages/rick-and-morty';
 import Doggos from './pages/doggos';
+import HackerNews from './pages/hackernews-clone';
 
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/decomposing-composers-loading"><DecomposingComposersFlag /></Route>
         <Route path="/rick-and-morty"><RickAndMorty /></Route>
         <Route path="/doggos"><Doggos /></Route>
+        <Route path="/hackernews-clone"><HackerNews /></Route>
         <Route path="/">
           <header className="App-header">
             <h1>Awesome lists!</h1>
@@ -37,6 +39,7 @@ function App() {
               <NavLink to="/decomposing-composers-loading">Decomposing Composers (with isLoading flag)</NavLink><br />
               <NavLink to="/rick-and-morty">Rick And Morty Characters (with custom hook and pagination)</NavLink><br />
               <NavLink to="/doggos">Doggos</NavLink><br />
+              <NavLink to="/hackernews-clone">Hacker News Clone</NavLink>
             </nav>
           </header>
         </Route>
