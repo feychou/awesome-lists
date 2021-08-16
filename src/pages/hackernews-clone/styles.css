@@ -1,7 +1,3 @@
-* {
-  list-style: none;
-}
-
 .HackerNews {
   font-family: sans-serif;
   text-align: center;
@@ -42,6 +38,7 @@
 
 .HackerNews ul {
   display: flex;
+  list-style: none;
 }
 
 .HackerNews li {
@@ -112,6 +109,10 @@
 .HackerNews .github-logo:hover {
   background-color: #ef6537;
   border-radius: 100%;
+}
+
+.HackerNews button {
+  padding: 3px 5px;
 }
 
 /*---------Responsive-------*/

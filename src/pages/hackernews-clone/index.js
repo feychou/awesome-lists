@@ -5,7 +5,6 @@ import useHN from "./useHN";
 import Footer from "./Footer";
 
 import "./styles.css";
-import "./resetter.css";
 
 export default function HackerNews() {
   const {
