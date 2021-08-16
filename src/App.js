@@ -39,7 +39,7 @@ function App() {
               <NavLink to="/decomposing-composers-loading">Decomposing Composers (with isLoading flag)</NavLink><br />
               <NavLink to="/rick-and-morty">Rick And Morty Characters (with custom hook and pagination)</NavLink><br />
               <NavLink to="/doggos">Doggos</NavLink><br />
-              <NavLink to="/hackernews-clone">Hacker News Clone</NavLink>
+              <NavLink to="/hackernews-clone">Hacker News Clone (with custom hooks, pagination, search)</NavLink>
             </nav>
           </header>
         </Route>
